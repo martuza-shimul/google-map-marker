@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 700px;
+        width: 100%;
+       }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+
+    <!-- <header>
+      <h1>JSON and AJAX</h1>
+      <button id="btn">Fetch Info for 3 New Animals</button>
+    </header>
+
+    <div id="animal-info"></div> -->
+    <p>NO2</p>
+    <ul id="NO2"></ul>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var options = {
+          zoom:12,
+          center:{lat: 57.7373, lng: 11.9714}
+        }
+        var map = new google.maps.Map(document.getElementById('map'), options);
+
+        var image = 'http://maps.google.com/mapfiles/kml/paddle/G.png';
+        var bike = 'pump.png';
+
+        addMarker(57.7373,11.9714,image);
+        addMarker(57.695897,11.987908,bike);
+        addMarker(57.690242,11.951711,bike);
+        addMarker(57.715128,12.003925,bike);
+        addMarker(57.7209,11.953011,bike);
+        addMarker(57.680189,11.899525,bike);
+        addMarker(57.698872,11.934392,bike);
+        addMarker(57.698209,11.966945,bike);
+        addMarker(57.707283,11.965824,bike);
+        addMarker(57.693569,11.972703,bike);
+        addMarker(57.710146,11.775443,bike);
+        addMarker(57.797038,12.04748,bike);
+        addMarker(57.708208,11.938556,bike);
+        addMarker(57.652242,11.910757,bike);
+        addMarker(57.70234,11.952481,bike);
+        addMarker(57.716457,11.974886,bike);
+        addMarker(57.687628,11.920968,bike);
+        addMarker(57.728103,12.003911,bike);
+        addMarker(57.707325,11.972263,bike);
+        addMarker(57.710771,12.02399,bike);
+        
+
+        function addMarker(lat,lng,pic){
+          var marker = new google.maps.Marker({
+            position: {lat, lng},
+            map: map,
+            icon:pic
+          });
+        }
+
+      
+        
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8uBpECAljEmOWWkqAxewygHlIMWJMYI&callback=initMap">
+    </script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
